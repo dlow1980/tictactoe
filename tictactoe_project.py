@@ -1,3 +1,18 @@
+blankBoard="""
+ -----------------
+|     |     |     |
+|  1  |  2  |  3  |
+|     |     |     |
+|-----------------|
+|     |     |     |
+|  4  |  5  |  6  |
+|     |     |     |
+|-----------------|
+|     |     |     |
+|  7  |  8  |  9  |
+|     |     |     |
+ -----------------
+"""
 def display_board(board):
     blankBoard="""
  -----------------
@@ -23,7 +38,7 @@ def display_board(board):
     print(blankBoard)
 
 def player_input():
-    player1 = input("Please pick a marker 'X' or 'O' ")
+    player1 = input("Pick a marker 'X' or 'O' ")
     while True:
         if player1.upper() == 'X':
             player2='O'
@@ -80,6 +95,7 @@ def replay():
 
 if __name__ == "__main__":
     print('Welcome to Tic Tac Toe!')
+    print(blankBoard)
     i = 1
     # Choose your side
     players=player_input()
